@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="José Berrón - Cyber Developer | C# · Kinect · Matrícula de Honor" />
+  <title>José Berrón | CyberDev</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/perfil.jpg" type="image/jpeg" />
+</head>
+<body>
+
+  <!-- Matrix Bits Background -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Hero Cyber -->
+  <header class="hero-cyber">
+    <div class="glitch-container">
+      <h1 class="glitch" data-text="JOSÉ BERRÓN">JOSÉ BERRÓN</h1>
+      <p class="tagline">> Desarrollador C# · Kinect Hacker · Matrícula de Honor</p>
+    </div>
+    <img src="assets/perfil.jpg" alt="José Berrón" class="profile-img neon-border" />
+    <a href="#contact" class="btn-neon">HACK ME</a>
+  </header>
+
+  <!-- Terminal About -->
+  <section class="terminal-section">
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="title">about.exe</span>
+      </div>
+      <div class="terminal-body" id="typewriter">
+        $ whoami<br>
+        > José Berrón - Cyber Developer<br><br>
+        $ cat skills.txt<br>
+        > C#, VB, Kinect SDK, Interacción Gestual, Voz, Windows API<br><br>
+        $ cat project.txt<br>
+        > Kinect To Windows 8 → Matrícula de Honor (único en la promoción)<br>
+        > Expediente Electrónico OGF → Gestión de Firmas Digitales<br><br>
+        $ echo "Listo para el siguiente reto..."<br>
+        <span class="cursor">█</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section-cyber">
+    <div class="container">
+      <h2 class="neon-text">PROYECTOS</h2>
+      <div class="grid">
+        <div class="card glitch-card">
+          <h3>Kinect To Windows 8</h3>
+          <p>Controla Windows con gestos y voz. Matrícula de Honor.</p>
+          <span class="tag">C# · Kinect · Voz</span>
+        </div>
+        <div class="card glitch-card">
+          <h3>Expediente OGF</h3>
+          <p>Gestión de firmas electrónicas.</p>
+          <span class="tag">C# · SQL · Seguridad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-cyber">
+    <div class="container">
+      <h2 class="neon-text">CONTACTO</h2>
+      <form name="contact" method="POST" data-netlify="true" class="cyber-form">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="name" placeholder="Nombre_" required />
+        <input type="email" name="email" placeholder="Email_" required />
+        <textarea name="message" placeholder="Mensaje_" rows="4" required></textarea>
+        <button type="submit" class="btn-neon pulse">> ENVIAR</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="cyber-footer">
+    <p>> System: Online | José Berrón © 2025 | Built with <span class="heart">♥</span> + Grok</p>
+  </footer>
+
+  <script src="js/matrix.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/glitch.js"></script>
+</body>
+</html>
